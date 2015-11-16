@@ -102,24 +102,38 @@
     font-style: normal;
 }
 
-/*-----------------------------------*/
-/*Mobile first CSS*/
-/*-----------------------------------*/
+
+/*===================================================*/
+/* Mobile first CSS */
+/*===================================================*/
+
+/*Structure*/
 
 html, body {
     background-color: #f3f3f3;
 	color: #292929;
 	font-size: 18px;
 	font-family: 'Merriweather', arial, verdana;
-    /*margin: 0 auto;*/
     line-height: 1.5;
     position: absolute;
     width: 100%;
 }
 
 
+.clearfix {
+    overflow: hidden;
+}
+
+
+/*Typography*/
+
 h1, h2, h3 {
     font-family: 'Open Sans', arial, verdana;
+}
+
+
+h1 {
+        font-size: 2rem;
 }
 
 
@@ -135,6 +149,7 @@ h3 {
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
+
 
 a {
     text-decoration: none;
@@ -153,12 +168,14 @@ label {
     font-weight: bold;
     text-transform: uppercase;
 }
-}
+
+
+/* Header */
 
 header {
 	background-image: url('../images/rustic-masthead.jpg');
+    background-size: cover;
 	color: white;
-	background-size: cover;
 }
 
 
@@ -178,7 +195,6 @@ nav {
 	margin: auto;
 	width: 100%;
     padding: 0 4%;
-    /*text-shadow: 2px 2px 5px black;*/
 }
 
 
@@ -187,20 +203,18 @@ nav {
     margin-bottom: 5%;
 }
 
+
 .restaurant-title img {
 	margin: auto;
-	width: 75%;
+	width: 80%;
 }
+
 
 .jingle {
 	text-align: center;
-	font-size: .6rem;
+	font-size: .8rem;
 	line-height: 1.5;
     margin-bottom: 5%;
-}
-
-.jingle p {
-    text-shadow: 2px 2px 1px black;
 }
 
 
@@ -212,17 +226,19 @@ button {
 	display: block;
 	margin: auto;
     margin-bottom: 10%;
-    font-size: .6rem;
-	width: 120px;
-	height: 25px;
+    font-size: .8rem;
+    width: 10rem;
+    height: 1.8rem;
     padding: 1%;
-    box-shadow: 1px 2px 5px black;
+    box-shadow: 3px 3px 5px 0 rgba(0 ,0 ,0 , 0.75);
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
 .date {
-	background-color: rgba(72,49,24,.9);
-    padding: 2% 0;
+	background-color: rgba(72, 49, 24,.9);
+    padding: 5% 0;
     line-height: 1.5;
     font-family: 'open_sansregular', arial, verdana;
 }
@@ -236,7 +252,7 @@ span {
 
 
 span#day {
-  font-size:.6rem;
+  font-size: .7rem;
 }
 
 
@@ -246,20 +262,22 @@ span#open{
 }
 
 
-.local {
+/*Local Flavours / Food & Drink*/
+
+.local, .food {
 	text-align: center;
-    padding: 10% 0;
-    line-height: 1.1rem;
+    padding: 15% 0;
+    line-height: 1.5rem;
 }
 
 
-.local-title {
+.local-title, .food-title {
     padding-bottom: 5%;
 }
 
 
 .local-desc {
-    font-size: .6rem;
+    font-size: .7rem;
     padding: 0 10%;
 }
 
@@ -269,35 +287,24 @@ span#open{
 }
 
 
-.food {
-    padding: 10% 0;
-    line-height: 1.2rem;
-}
-
-
-.food-title {
-	text-align: center;
-    padding-bottom: 5%;
-    font-weight: bold;
-}
-
-
 .forks, .knives, .glasses {
 	text-align: center;	
     display: block;
+    margin-bottom: 5%;
 }
 
 
 .forks-title, .knives-title, .glasses-title {
     padding: 5% 0 3% 0;
-    /*text-align: center;*/
 }
 
 
 .forks-desc, .knives-desc, .glasses-desc {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
+
+/* Book a Table*/
 
 .book {
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), 
@@ -309,7 +316,6 @@ span#open{
 
 
 .book-title h2 {
-    padding-bottom: 5%;
     font-family: 'open_sansextrabold', arial, verdana;
     text-align: center;
 }
@@ -336,7 +342,7 @@ span#open{
 
 .form-list label, .form-list2 label {
     color: #e7e3c5;
-    font-size: .7rem;
+    font-size: 1rem;
 }
 
 
@@ -348,13 +354,9 @@ span#open{
 .form-list input, .form-list2 input {
     display: block;
     width: 90%;
+    height: 1.5rem;
     border: 1px solid #f89603;
     margin: 3px 0 0 0;
-}
-
-
-.clearfix {
-	overflow: hidden;
 }
 
 
@@ -368,17 +370,19 @@ span#open{
     border: none;
     color: white;
     text-transform: uppercase;
-    font-size: .6rem;
+    font-size: .8rem;
     font-weight: bold;
-    width: 110px;
-    height:30px;
-    box-shadow: 1px 2px 5px black;
+    width: 8rem;
+    height: 1.8rem;
+    box-shadow: 3px 3px 5px 0 rgba(0 ,0 ,0 , 0.75);
 }
 
 
+/* Find Us */
+
 .find {
     text-align: center;
-    padding: 5%;
+    padding: 10% 5%;
 }
 
 
@@ -387,32 +391,18 @@ span#open{
 }
 
 
-.find-title {
-    padding: 0 0 5% 0;
+.addy, .phone, .email {
+    margin-bottom: 5%;
 }
 
 
-.addy-title {
-}
-
-
-.addy-desc {
+.addy-desc, .phone-desc, .email-desc {
     padding: 5% 0;
     font-size: .8rem;
 }
 
 
-.phone-desc {
-    padding: 5% 0;
-    font-size: .8rem;
-}
-
-
-.email-desc {
-    padding: 5% 0 0 0;
-    font-size: .8rem;
-}
-
+/* Footer */
 
 footer {
     background-color: #483118;
@@ -425,7 +415,7 @@ footer {
     margin: 0 auto;
     float: left;
     width: 30%;
-    padding: 5%;
+    padding: 10% 5%;
 }
 
 
@@ -438,7 +428,7 @@ footer {
 
 
 .follow-title {
-    font-size: .6rem;
+    font-size: .8rem;
 }
 
 
@@ -447,22 +437,31 @@ footer {
 }
 
 
-.follow-list li {
-    padding: 0 0 0 50%;
+.follow-list i {
+    font-size: 1.2rem;
+    padding-left: .5rem;
 }
 
 
 .copyright {
-    font-size: .5rem;
+    font-size: .6rem;
 }
 
 
+/*===================================================*/
+/* Media Queries */
+/*===================================================*/
+/*-----------------------------------------*/
+/* Tablet */
+/*-----------------------------------------*/
+
 @media (min-width: 768px) {
-	
-    h1 {
-        font-size: 2rem;
+
+	/*Header*/
+
+    body {
+        /*background-color: green;*/
     }
-         
 
     nav {
         text-align: right;
@@ -506,6 +505,8 @@ footer {
         font-size: 1.2rem;
     }
 
+
+    /*Local Flavours / Food & Drink*/
 
     .local {
         padding: 5% 0;
@@ -560,7 +561,9 @@ footer {
     line-height: 1.5rem;
     }
 
- 
+    
+    /*Book A Table Section*/
+
     .book {
     background-image: url('../images/tables.jpg');
     background-size: cover;
@@ -574,6 +577,7 @@ footer {
     padding: 5% 0;
     }
 
+
     .book-title {
         font-size: 2rem;
     }
@@ -582,6 +586,7 @@ footer {
     .book-desc {
         font-size: .8rem;
     }
+
 
     .form {
         padding: 0 0 0 3%;
@@ -592,11 +597,13 @@ footer {
         font-size: .8rem;
     }
 
+
     .form-list span, .form-list2 span {
         text-align: left;
         float: left;
         width: 33%;
     }
+
 
     .form-list input, .form-list2 input {
         width: 85%;
@@ -653,12 +660,14 @@ footer {
         padding: 10% 0;
     }
 
+
     .restaurant-title-bottom img {
         margin: 0 auto;
         float: left;
         width: 15%;
         padding: 3% 5%;
     }
+
 
     .restaurant-title-bottom img {
         margin: 0 auto;
@@ -822,11 +831,13 @@ footer {
         font-size: 1rem;
     }
 
+
     .form-list span, .form-list2 span {
         text-align: left;
         float: left;
         width: 33%;
     }
+
 
     .form-list input, .form-list2 input {
         width: 80%;
