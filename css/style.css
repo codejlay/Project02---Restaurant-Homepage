@@ -133,7 +133,7 @@ h1, h2, h3 {
 
 
 h1 {
-        font-size: 2rem;
+    font-size: 2rem;
 }
 
 
@@ -195,6 +195,7 @@ nav {
 	margin: auto;
 	width: 100%;
     padding: 0 4%;
+    text-shadow: 2px 2px 2px black;
 }
 
 
@@ -262,6 +263,13 @@ span#open{
 }
 
 
+/*Gallery*/
+
+.bx-wrapper img, .bx-wrapper li {
+    width: 100vw;
+}
+
+
 /*Local Flavours / Food & Drink*/
 
 .local, .food {
@@ -279,11 +287,6 @@ span#open{
 .local-desc {
     font-size: .7rem;
     padding: 0 10%;
-}
-
-
-.bx-wrapper img, .bx-wrapper li {
-    width: 100vw;
 }
 
 
@@ -307,13 +310,17 @@ span#open{
 /* Book a Table*/
 
 .book {
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), 
-    url('../images/tables.jpg');
+    background-image: url('../images/tables.jpg');
 	background-size: cover;
 	color: white;
-    padding: 7% 0;
+    padding: 0;
 }
 
+
+.book-in {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10% 5%;
+}
 
 .book-title h2 {
     font-family: 'open_sansextrabold', arial, verdana;
@@ -355,8 +362,8 @@ span#open{
     display: block;
     width: 90%;
     height: 1.5rem;
-    border: 1px solid #f89603;
-    margin: 3px 0 0 0;
+    border: 2px solid #f89603;
+    margin: 3% 0 0 0;
 }
 
 
@@ -373,7 +380,7 @@ span#open{
     font-size: .8rem;
     font-weight: bold;
     width: 8rem;
-    height: 1.8rem;
+    height: 2rem;
     box-shadow: 3px 3px 5px 0 rgba(0 ,0 ,0 , 0.75);
 }
 
@@ -470,7 +477,6 @@ footer {
         margin: auto;
         width: 100%;
         padding: 0 2%;
-        text-shadow: 2px 2px 10px black;
     }
 
 
@@ -487,8 +493,8 @@ footer {
 
     button {
         font-size: .8rem;
-        width: 150px;
-        height: 35px;
+        width: 8.5rem;
+        height: 2rem;
     }
 
 
@@ -504,6 +510,15 @@ footer {
 
     span#open {
         font-size: 1.2rem;
+    }
+
+
+    /*Gallery*/
+
+    .bx-wrapper img, .bx-wrapper li {
+        max-width: 100%;
+        width: 50vw !important;
+        display: block;
     }
 
 
@@ -527,17 +542,10 @@ footer {
 
     .forks, .knives, .glasses {
         float: left;
-        width: 33%;
+        width: 33.33%;
         display: block;
         margin-bottom: 0;
     }
-
-
-    .glasses {
-        float: right;
-        width: 33%;
-        display: block;
-    }   
 
 
     .forks-title, .knives-title, .glasses-title {
@@ -555,17 +563,14 @@ footer {
     /*Book A Table*/
 
     .book {
-    background-image: url('../images/tables.jpg');
-    background-size: cover;
-    padding: 5% 0;
+    padding: 5%;
     }
 
 
     .book-in {
     background-image:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5));
     background-size: cover;
-    margin: 0% 5%;
-    padding: 3% 0;
+    padding: 5%;
     }
 
 
@@ -593,34 +598,21 @@ footer {
     .form-list span, .form-list2 span {
         text-align: left;
         float: left;
-        width: 33%;
+        width: 33.33%;
+        padding: 1% 0;
     }
 
 
     .form-list input, .form-list2 input {
         width: 80%;
-        height: 25px;
+        height: 2rem;
     }
 
 
     .book-now input {
-        background-color: #f89603;
-        border: none;
-        color: white;
-        text-transform: uppercase;
         font-size: .9rem;
-        font-weight: bold;
-        width: 8rem;
         height: 2rem;
-        box-shadow: 1px 2px 5px black;
         margin-top: 3%;
-    }
-
-
-    .bx-wrapper img, .bx-wrapper li {
-        max-width: 100%;
-        width: 50vw !important;
-        display: block;
     }
 
 
@@ -638,7 +630,7 @@ footer {
 
     .addy, .phone, .email {
         float: left;
-        width: 33%;
+        width: 33.33%;
         margin-bottom: 0;
     }
 
@@ -693,10 +685,19 @@ footer {
 
 @media (min-width: 1280px) {
 
+    /*Global*/
+
     h1 {
         font-size: 2.5rem;
     }
     
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
 
     nav {
         text-align: right;
@@ -704,12 +705,13 @@ footer {
     } 
 
 
+    /*Header*/
+
     .nav-list p {
         font-size: .9rem;
         margin: auto;
         width: 100%;
         padding: 0 2%;
-        text-shadow: 2px 2px 10px black;
     }
 
 
@@ -742,51 +744,22 @@ footer {
     }
 
 
-    .local {
-        padding: 5% 10%;
-        line-height: 1.3rem;
-    }
-
-
-    .local-desc {
-        font-size: 1rem;
-    }
-
+    /*Gallery*/
 
     .bx-wrapper img, .bx-wrapper li {
         width: 33vw !important;
     }
 
 
-    .food {
-        margin: 0 2%;
-        padding: 5% 0;
+    /*Local Flavours / Food & Drink*/
+
+    .local, .food {
+        padding: 3% 0;
     }
 
-    .forks {
-        float: left;
-        width: 33%;
-        display: block;
-    }
-
-
-    .knives {
-        float: left;
-        width: 33%;
-        display: block;
-    }    
-
-
-    .glasses {
-        float: right;
-        width: 33%;
-        display: block;
-    }    
-
-
-    .forks-title, .knives-title, .glasses-title {
-        padding: 5% 0 5% 0;
-        font-size: 1.5rem;
+    
+    .local-desc {
+        font-size: 1rem;
     }
 
 
@@ -796,63 +769,25 @@ footer {
     }
 
 
-    .book-in {
-        margin: 0% 3%;
-        padding: 3% 0;
+    .book {
+        padding: 3%;
     }
 
 
-    .book-title {
-        font-size: 2.5rem;
+    .book-in {
+        padding: 3%;
     }
 
 
     .book-desc {
         font-size: 1rem;
-        margin: 0 5%;
-    }
-
-
-    .form {
-        padding: 0 0 0 3%;
     }
 
 
     .form-list label, .form-list2 label {
         font-size: 1rem;
     }
-
-
-    .form-list span, .form-list2 span {
-        text-align: left;
-        float: left;
-        width: 33%;
-    }
-
-
-    .form-list input, .form-list2 input {
-        width: 80%;
-        height: 40px;
-    }
-
-
-    .book-now input {
-        background-color: #f89603;
-        border: none;
-        color: white;
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: bold;
-        width: 160px;
-        height: 45px;
-        box-shadow: 1px 2px 5px black;
-    }
-
-
-    .find {
-        margin-bottom: 10%;
-    }
-
+   
 
     .addy, .phone, .email {
         font-size: 1.5rem;
@@ -866,37 +801,7 @@ footer {
 
 
     .restaurant-title-bottom img {
-        margin: 0 auto;
-        float: left;
         width: 15%;
         padding: 3% 5%;
-    }
-
-
-    .follow {
-        width: 50%;
-        text-align: right;
-        padding: 3% 5%;
-    }
-
-
-    .follow-title {
-        font-size: 1rem;
-    }
-
-
-    .follow-list {
-        padding: 2% 0;
-    }
-
-
-    .follow-list i {
-        padding: 0 0 0 3%;
-        font-size: 4vw;
-    }
-
-
-    .copyright {
-        font-size: .9rem;
     }
 }
