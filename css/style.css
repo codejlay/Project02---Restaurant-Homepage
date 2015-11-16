@@ -224,7 +224,7 @@ button {
 	background-color: #f89603;
 	border: none;
 	display: block;
-	margin: auto;
+	margin: 0 auto;
     margin-bottom: 10%;
     font-size: .8rem;
     width: 10rem;
@@ -459,10 +459,6 @@ footer {
 
 	/*Header*/
 
-    body {
-        /*background-color: green;*/
-    }
-
     nav {
         text-align: right;
         margin-bottom: 10%;
@@ -496,6 +492,11 @@ footer {
     }
 
 
+    .date {
+        padding: 2% 0;
+    }
+
+
     span#day {
         font-size: .8rem;
     }
@@ -508,51 +509,40 @@ footer {
 
     /*Local Flavours / Food & Drink*/
 
-    .local {
+    .local, .food {
         padding: 5% 0;
+    }
+
+
+    .local-title, .food-title {
+        padding-bottom: 2.5%;
     }
 
 
     .local-desc {
-        font-size: .8rem;
+        font-size: .7rem;
+        line-height: 1rem;
     }
 
 
-    .food {
-        margin: 0 2%;
-        padding: 5% 0;
-    }
-
-
-    .food-title {
-        margin-top: 1%;
-    }
-
-
-    .forks {
+    .forks, .knives, .glasses {
         float: left;
         width: 33%;
         display: block;
+        margin-bottom: 0;
     }
-
-
-    .knives {
-        float: left;
-        width: 33%;
-        display: block;
-    }    
 
 
     .glasses {
         float: right;
         width: 33%;
         display: block;
-    }    
+    }   
 
 
     .forks-title, .knives-title, .glasses-title {
         padding: 5% 0 3% 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
 
@@ -562,11 +552,12 @@ footer {
     }
 
     
-    /*Book A Table Section*/
+    /*Book A Table*/
 
     .book {
     background-image: url('../images/tables.jpg');
     background-size: cover;
+    padding: 5% 0;
     }
 
 
@@ -574,17 +565,18 @@ footer {
     background-image:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5));
     background-size: cover;
     margin: 0% 5%;
-    padding: 5% 0;
+    padding: 3% 0;
     }
 
 
-    .book-title {
+    .book-title h2 {
         font-size: 2rem;
+        margin-bottom: 1%;
     }
 
 
     .book-desc {
-        font-size: .8rem;
+        font-size: .65rem;
     }
 
 
@@ -594,7 +586,7 @@ footer {
 
 
     .form-list label, .form-list2 label {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
 
@@ -606,7 +598,7 @@ footer {
 
 
     .form-list input, .form-list2 input {
-        width: 85%;
+        width: 80%;
         height: 25px;
     }
 
@@ -618,8 +610,8 @@ footer {
         text-transform: uppercase;
         font-size: .9rem;
         font-weight: bold;
-        width: 160px;
-        height: 45px;
+        width: 8rem;
+        height: 2rem;
         box-shadow: 1px 2px 5px black;
         margin-top: 3%;
     }
@@ -632,47 +624,35 @@ footer {
     }
 
 
+    /*Find Us*/
+
     .find {
-        margin-bottom: 12%;
+        padding: 2.5% 5%;
     }
 
 
-    .addy {
+    .find-title h2 {
+        margin-bottom: 3%;
+    }
+
+
+    .addy, .phone, .email {
         float: left;
         width: 33%;
-    }
-
-
-    .phone {
-        float: left;
-        width: 33%;
-    }
-
-
-    .email {
-        float: right;
-        width: 33%;
+        margin-bottom: 0;
     }
 
 
     .addy-desc, .phone-desc, .email-desc {
         font-size: .9rem;
-        padding: 10% 0;
     }
 
 
+    /*Footer*/
+
     .restaurant-title-bottom img {
         margin: 0 auto;
-        float: left;
         width: 15%;
-        padding: 3% 5%;
-    }
-
-
-    .restaurant-title-bottom img {
-        margin: 0 auto;
-        float: left;
-        width: 20%;
         padding: 5%;
     }
 
@@ -680,18 +660,22 @@ footer {
     .follow {
         width: 50%;
         text-align: right;
-        padding: 5%;
+        padding: 2.5%;
     }
 
 
     .follow-title {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
+
+    .follow-list {
+        padding: 1%;
+    }
     
     .follow-list i {
         padding: 0 0 0 3%;
-        font-size: 5vw;
+        font-size: 2rem;
     }
 
 
@@ -699,6 +683,13 @@ footer {
         font-size: .8rem;
     }
 
+
+/*===================================================*/
+/* Media Queries */
+/*===================================================*/
+/*-----------------------------------------*/
+/* Desktop */
+/*-----------------------------------------*/
 
 @media (min-width: 1280px) {
 
