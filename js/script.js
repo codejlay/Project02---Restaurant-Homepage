@@ -1,17 +1,10 @@
-// $(document).ready(function(){
-//   $('.bxslider').bxSlider();
+$(function() {
 
-// });
-
-$(document).ready(function()
-{
-  
   $('.bxslider').bxSlider(
   {
   auto: true,
   controls: false,
   pager: false,
-  // infiniteLoop: true,
   minSlides: 1,
   maxSlides:3,
   slideWidth:0,
@@ -45,5 +38,9 @@ var daysWeek = [
     $('span#open').text('We\'re closed!') }
     $('span#day').text('It\'s ' + daysWeek[i] + ',')
     };
-  openClosed(); //Jeremy's code//
+  openClosed();
+});
+
+$(function() {
+  $( "#datepicker" ).datepicker();
 });

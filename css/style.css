@@ -322,6 +322,7 @@ span#open{
     padding: 10% 5%;
 }
 
+
 .book-title h2 {
     font-family: 'open_sansextrabold', arial, verdana;
     text-align: center;
@@ -369,6 +370,7 @@ span#open{
 
 .book-now {
     text-align: center;
+    margin-top: 2rem;
 }
 
 
@@ -382,6 +384,15 @@ span#open{
     width: 8rem;
     height: 2rem;
     box-shadow: 3px 3px 5px 0 rgba(0 ,0 ,0 , 0.75);
+}
+
+
+.ui-widget-header {
+    background: #f89603;
+}
+
+.ui-state-default .ui-state-highlight {
+    background: #f89603;
 }
 
 
@@ -483,6 +494,7 @@ footer {
     .restaurant-title img {
         width: 70%;
     }
+
 
     .jingle {
         font-size: 1rem;
@@ -690,14 +702,17 @@ footer {
     h1 {
         font-size: 2.5rem;
     }
+
     
     h2 {
         font-size: 2.25rem;
     }
 
+
     h3 {
         font-size: 1.65rem;
     }
+
 
     nav {
         text-align: right;
