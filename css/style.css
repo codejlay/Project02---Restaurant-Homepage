@@ -246,20 +246,20 @@ button {
 
 
 span {
-  display:block;
-  color:white;
-  text-align: center;
+    display:block;
+    color:white;
+    text-align: center;
 }
 
 
 span#day {
-  font-size: .7rem;
+    font-size: .7rem;
 }
 
 
 span#open{
-  text-transform: uppercase;
-  font-size: 1rem;
+      text-transform: uppercase;
+      font-size: 1rem;
 }
 
 
@@ -567,22 +567,22 @@ footer {
 
 
     .forks-desc, .knives-desc, .glasses-desc {
-    font-size: .7rem;
-    line-height: 1.5rem;
+        font-size: .7rem;
+        line-height: 1.5rem;
     }
 
     
     /*Book A Table*/
 
     .book {
-    padding: 5%;
+        padding: 5%;
     }
 
 
     .book-in {
-    background-image:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5));
-    background-size: cover;
-    padding: 5%;
+        background-image:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5));
+        background-size: cover;
+        padding: 5%;
     }
 
 
@@ -750,12 +750,12 @@ footer {
 
 
     span#day {
-      font-size: 1rem;
+        font-size: 1rem;
     }
 
 
     span#open {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 
 
