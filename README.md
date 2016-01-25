@@ -1,5 +1,7 @@
 # Project 2 - 100 Mile Resto Bar
 
+View deployed site through [GitHub Pages.](http://codejlay.github.io/project02-restaurant-homepage/)
+
 **Summary:**
 
 Responsive website 100 Mile Resto Bar.
